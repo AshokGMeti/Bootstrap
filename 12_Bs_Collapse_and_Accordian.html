@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+   
+</head>
+<body>
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a href="#" class="navbar-brand">Collapse and Accordian</a>
+   </nav> 
+   <!-- Collapse in bootstrap-->
+   <div class="container mt-5">
+     <button class="btn btn-primary" data-toggle="collapse" data-target="#blue-card">Click me</button>
+     <div class="collapse" id="blue-card">
+        <div class="card">
+            <div class="card-body bg-dark text-white">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas laborum mollitia quos sed a sequi minima repellat! Reiciendis maxime exercitationem perferendis amet odio tempore facilis iusto, ullam doloremque expedita.</p>
+            </div>
+      </div>
+     </div>
+   </div>
+   <hr>
+   <!-- Accordian in bootstrap -->
+    <div class="container mt-3">
+        <div class="accordion" id="question-accr">
+            <!-- question-1 -->
+            <div class="card">
+              <div class="card-header bg-info text-white font-weight-bold" data-toggle="collapse" data-target="#question-1">
+                <h3>What is Bootstrap?</h3>
+              </div>
+             <div class="collapse" id="question-1" data-parent="#question-accr">
+                 <div class="card-body">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quibusdam ducimus amet repudiandae facere, aspernatur veniam ipsum quod mollitia eius vero nam culpa deserunt quia ea tempora iure officiis quisquam. Fuga laborum quas dolores atque dicta modi nostrum assumenda iure.</p>
+                 </div>
+             </div>
+            </div>  
+            <!-- question-2 --> 
+            <div class="card">
+                <div class="card-header bg-warning text-white font-weight-bold" data-toggle="collapse" data-target="#question-2">
+                  <h3>What is Css?</h3>
+                </div>
+               <div class="collapse" id="question-2" data-parent="#question-accr">
+                   <div class="card-body">
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quibusdam ducimus amet repudiandae facere, aspernatur veniam ipsum quod mollitia eius vero nam culpa deserunt quia ea tempora iure officiis quisquam. Fuga laborum quas dolores atque dicta modi nostrum assumenda iure.</p>
+                   </div>
+               </div>
+              </div>  
+              <!-- question-3 -->
+              <div class="card">
+                <div class="card-header bg-secondary text-white font-weight-bold" data-toggle="collapse" data-target="#question-3">
+                  <h3>What is Java?</h3>
+                </div>
+               <div class="collapse" id="question-3" data-parent="#question-accr">
+                   <div class="card-body">
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quibusdam ducimus amet repudiandae facere, aspernatur veniam ipsum quod mollitia eius vero nam culpa deserunt quia ea tempora iure officiis quisquam. Fuga laborum quas dolores atque dicta modi nostrum assumenda iure.</p>
+                   </div>
+               </div>
+              </div>  
+      </div>
+    </div>
+    
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/mdb.js"></script>
+</body>
+</html>
